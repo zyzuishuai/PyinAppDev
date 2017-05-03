@@ -67,6 +67,12 @@ public class PersonDetailActivity extends AppCompatActivity {
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         imageView.setImageBitmap(blurBitmap);
         circleImageView.setImageBitmap(originBitmap);
+        circleImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                startActivity(new Intent(this,));
+            }
+        });
 
 
         floatingActionButton = (FloatingActionButton) findViewById(R.id.fab);
